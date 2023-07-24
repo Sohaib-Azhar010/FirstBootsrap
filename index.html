@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap</title>
+    <link rel="icon" href="Imgs/favicon-16x16.png" type="image/icon type" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Imgs/favicon-32x32.png"
+            alt=""
+            width="30"
+            height="30"
+            style="margin-right: 5px;"
+            class="d-inline-block align-text-top"
+          />Bootstrap</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://getbootstrap.com/docs/5.0/"
+                target="_main"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                target="_main"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#Services">Services</a></li>
+                <li><a class="dropdown-item" href="#ourteam">Team</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-outline-secondary">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <!-- <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div> -->
+      <div class="carousel-inner">
+        <div class="bg-text">
+          <br />
+          <br />
+          <p
+            class="text-center"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: xx-large;
+            "
+          >
+            Welcome to Bootstrap
+          </p>
+
+          <p
+            class="text-center"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-weight: 100;
+            "
+          >
+            We are here to help you
+          </p>
+        </div>
+
+        <div class="carousel-item active">
+          <img
+            src="Imgs/pexels-scott-webb-532568.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imgs/pexels-christina-morillo-1181406.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imgs/pexels-fauxels-3183150.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imgs/pexels-moe-magners-7495487.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <br />
+
+    <center>
+      <p
+        id="Services"
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-size: xx-large;
+        "
+      >
+        SERVICES
+      </p>
+    </center>
+
+    <br />
+    <br />
+
+    <div
+      class="shadow p-3 mb-5 bg-body rounded"
+      style="display: flex; justify-content: space-evenly"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="Imgs/JavaScript-logo.png"
+          class="card-img-top"
+          alt="js logo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Learn JScript</h5>
+          <p class="card-text">Here you can learn JavaScript</p>
+          <a
+            href="https://www.w3schools.com/js/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="Imgs/html.png" class="card-img-top" alt="htmllogo" />
+        <div class="card-body">
+          <h5 class="card-title">Learn HTML</h5>
+          <p class="card-text">Here you can learn HTML</p>
+          <a
+            href="https://www.w3schools.com/html/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="Imgs/css.png" class="card-img-top" alt="csslogo" />
+        <div class="card-body">
+          <h5 class="card-title">Learn CSS</h5>
+          <p class="card-text">Here you can learn CSS</p>
+          <a
+            href="https://www.w3schools.com/css/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="shadow p-3 mb-5 bg-body rounded"
+      style="display: flex; justify-content: space-evenly"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="Imgs/python-logo-ipad-air-backgrounds-and-python-code.jpg"
+          class="card-img-top"
+          alt="js logo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Learn Python</h5>
+          <p class="card-text">Here you can learn Python</p>
+          <a
+            href="https://www.w3schools.com/python/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="Imgs/c plus.jpg" class="card-img-top" alt="htmllogo" />
+        <div class="card-body">
+          <h5 class="card-title">Learn C++</h5>
+          <p class="card-text">Here you can learn C++</p>
+          <a
+            href="https://www.w3schools.com/cpp/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="Imgs/sssql.png" class="card-img-top" alt="csslogo" />
+        <div class="card-body">
+          <h5 class="card-title">Learn SQL</h5>
+          <p class="card-text">Here you can learn SQL</p>
+          <a
+            href="https://www.w3schools.com/sql/default.asp"
+            class="btn btn-primary"
+            >Click to Learn</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <center>
+      <p
+        id="ourteam"
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-size: xx-large;
+        "
+      >
+        OUR TEAM
+      </p>
+    </center>
+
+    <br />
+    <br />
+    <center>
+      <div style="display: inline; justify-content: space-between">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="Imgs/Sohaib.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Sohaib Azhar
+                  <a href="https://www.facebook.com/sohaib.azhar.31508/">
+                    <img src="Imgs/facebook-square-logo-24.png" alt="fb logo"
+                  /></a>
+                </h5>
+                <p class="card-text">
+                  Quality is a product of a conflict between programmers and
+                  testers.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="Imgs/razi.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Muhammad Razi
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100010759207564"
+                  >
+                    <img src="Imgs/facebook-square-logo-24.png" alt="fb logo"
+                  /></a>
+                </h5>
+                <p class="card-text">
+                  Quality is a product of a conflict between programmers and
+                  testers.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <br />
+    <br />
+    <center>
+      <h2
+        style="
+          color: rgb(0, 0, 0);
+          font-family: 'Times New Roman', Times, serif;
+          font-size: x-large;
+        "
+      >
+        Star Rating
+      </h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+    </center>
+    <br />
+    <br />
+
+    <div
+      style="
+        display: inline-flexbox;
+        justify-content: space-evenly;
+        height: 200px;
+      "
+    >
+      <center style="margin-top: 5px">
+        <p
+          id="contact"
+          style="
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+          "
+        >
+          Contact Us
+        </p>
+      </center>
+      <div style="padding: 20px; background-color: rgb(226, 222, 222)">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Contact no.</h5>
+                <p class="card-text">
+                  <img src="Imgs/phone-call-solid-24.png" alt="contact logo" />
+                  +92-304-7528366
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Visit Us</h5>
+                <p class="card-text">
+                  <img src="Imgs/link-regular-24.png" alt="lonk logo" />
+                  <a
+                    href="https://getbootstrap.com/docs/5.0"
+                    class="text-decoration-none"
+                    >www.bootstrap.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <p style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255)">
+          All Rights Reversed ©
+        </p>
+      </center>
+    </div>
+  </body>
+</html>
